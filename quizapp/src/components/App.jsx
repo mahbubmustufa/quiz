@@ -1,9 +1,13 @@
-import Nav from "./Nav";
+import Layout from "./Layout";
+import Home from "./pages/Home";
+import "./styles/App.css";
 
 function App() {
 	return (
 		<>
-			<Nav />
+			<Layout>
+				<Home />
+			</Layout>
 		</>
 	);
 }
