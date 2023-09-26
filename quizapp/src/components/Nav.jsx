@@ -1,11 +1,12 @@
 import React from "react";
+import classes from "./styles/Nav.module.css";
 
 export default function Nav() {
 	return (
-		<nav className="nav">
+		<nav className={classes.nav}>
 			<ul>
 				<li>
-					<a className="brand" href="index.html">
+					<a className={classes.brand} href="index.html">
 						<img src=""></img>
 						<h3>Learn with sumit</h3>
 					</a>
