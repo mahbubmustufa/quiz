@@ -44,7 +44,9 @@
 	}
 
 	.next span:first-child {
-		display: none;
+		 {
+			/*display: none;*/
+		}
 	}
 }
 

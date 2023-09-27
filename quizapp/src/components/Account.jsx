@@ -1,5 +1,6 @@
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "./styles/Account.module.css";
 
 export default function Account() {
@@ -8,7 +9,7 @@ export default function Account() {
 			<span className="" title="Account">
 				<AccountCircleIcon />
 			</span>
-			<a href="signup.html">Signup</a>
+			<Link to="/signup">Signup</Link>
 			{/*
         <span className={material-icons-outlined}
             title="Logout">
