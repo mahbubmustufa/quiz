@@ -19,7 +19,9 @@ export default function Signup() {
 					<TextInput type="password" placeholder="Confirm password" />
 
 					<Checkbox text="I agree to the trems &amp; conditation" />
-					<Button>Submit Now</Button>
+					<Button>
+						<span>Submit Now</span>
+					</Button>
 					<div className="info">
 						Already have an account? <a href="login.html">Login</a> instead.
 					</div>
