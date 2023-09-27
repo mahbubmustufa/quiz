@@ -1,5 +1,5 @@
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import React from "react";
 import classes from "./styles/ProgressBar.module.css";
 
@@ -15,16 +15,18 @@ export default function ProgressBar() {
 				<div className={classes.tooltip}>24% Complete!</div>
 				<div className={classes.rangeBody}>
 					<div className={classes.backButton}>
-						<div className={classes.progress} style={width: 20%}></div>
+						<div className={classes.progress} style={{ width: "20%" }}></div>
+					</div>
 				</div>
+				<a>
+					<button className={classes.next}>
+						<span>Next Question</span>
+						<span>
+							<ArrowRightAltIcon />
+						</span>
+					</button>
+				</a>
 			</div>
-			<a href="result.html">
-				<button className={classes.next}>
-				<span>Next Question</span>
-				<span><ArrowRightAltIcon /></span>
-				</button>
-			</a>
 		</div>
-		
 	);
 }
