@@ -10,6 +10,7 @@ export default function Account() {
 				<AccountCircleIcon />
 			</span>
 			<Link to="/signup">Signup</Link>
+			<Link to="/login">Login</Link>
 			{/*
         <span className={material-icons-outlined}
             title="Logout">

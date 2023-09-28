@@ -1,8 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../Button";
 import Checkbox from "../Checkbox";
 import Form from "../Form";
-import Illustration from "../Illustration";
 import TextInput from "../TextInput";
 import classes from "../styles/Singup.module.css";
 
@@ -11,7 +11,6 @@ export default function Signup() {
 		<>
 			<h1>Create ab account</h1>
 			<div className={classes.column}>
-				<Illustration />
 				<Form className={`${classes.signup}`}>
 					<TextInput type="text" placeholder="Enter name" />
 					<TextInput type="email" placeholder="Enter email" />
@@ -23,7 +22,8 @@ export default function Signup() {
 						<span>Submit Now</span>
 					</Button>
 					<div className="info">
-						Already have an account? <a href="login.html">Login</a> instead.
+						Already have an account?
+						<Link to="login">Login</Link> instead.
 					</div>
 				</Form>
 			</div>
