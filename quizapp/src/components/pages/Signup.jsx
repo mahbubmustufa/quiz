@@ -9,7 +9,7 @@ import classes from "../styles/Singup.module.css";
 export default function Signup() {
 	return (
 		<>
-			<h1>Create ab account</h1>
+			<h1>Create an account</h1>
 			<div className={classes.column}>
 				<Form className={`${classes.signup}`}>
 					<TextInput type="text" placeholder="Enter name" />
@@ -17,13 +17,13 @@ export default function Signup() {
 					<TextInput type="password" placeholder="Enter password" />
 					<TextInput type="password" placeholder="Confirm password" />
 
-					<Checkbox text="I agree to the trems &amp; conditation" />
+					<Checkbox text=" I agree to the trems &amp; conditation" />
 					<Button>
 						<span>Submit Now</span>
 					</Button>
 					<div className="info">
 						Already have an account?
-						<Link to="login">Login</Link> instead.
+						<Link to="/login">Login</Link> instead.
 					</div>
 				</Form>
 			</div>
