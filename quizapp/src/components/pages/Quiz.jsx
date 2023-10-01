@@ -7,7 +7,7 @@ export default function Quiz() {
 	return (
 		<>
 			<h1>Pick three of your favorite star wars Flims</h1>
-			<f4>Question can have multiple answers</f4>
+			<h4>Question can have multiple answers</h4>
 			<Answers />
 			<ProgressBar />
 			<MiniPlayer />
