@@ -27,7 +27,7 @@ export default function SingupForm() {
 		try {
 			setError("");
 			setLoading(true);
-			await signup(username, email, password);
+			await signup(email, password, username);
 			navigate("/");
 		} catch (err) {
 			console.log(err);
@@ -44,7 +44,7 @@ export default function SingupForm() {
 					required
 					onChange={(e) => setUsername(e.target.value)}
 					type="text"
-					placeholder="Enter name"
+					placeholder="Enter username"
 				/>
 				<TextInput
 					value={email}
@@ -53,6 +53,7 @@ export default function SingupForm() {
 					type="email"
 					placeholder="Enter email"
 				/>
+
 				<TextInput
 					value={password}
 					required

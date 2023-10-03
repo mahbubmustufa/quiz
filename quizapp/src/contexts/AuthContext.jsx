@@ -11,7 +11,6 @@ import {
 import React, { useContext, useEffect, useState } from "react";
 //impoet firebase.jsx file
 import "../firebase";
-
 //create context
 const AuthContext = React.createContext();
 
@@ -41,7 +40,9 @@ export function AuthProvider({ children }) {
 		await createUserWithEmailAndPassword(auth, email, password);
 
 		//update profile
-		await updateProfile(auth.currentUser, { displayName: username });
+		await updateProfile(auth.currentUser, {
+			displayName: username,
+		});
 
 		//we recive user name and pass in auth.currentUser to local user by const user
 		const user = auth.currentUser;
