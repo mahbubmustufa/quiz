@@ -46,7 +46,7 @@ export default function LoginForm() {
 				type="password"
 				placeholder="Enter your password"
 			/>
-			<Button disabled={loading} type="submit">
+			<Button type="submit">
 				<span>Login</span>
 			</Button>
 			{error && <p className="error">{error}</p>}
