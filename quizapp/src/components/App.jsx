@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AuthProvider } from "../contexts/AuthContext";
 import Layout from "./Layout";
+import PriveteRoute from "./PriveteRoute";
 import Result from "./Result";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -16,8 +17,8 @@ function App() {
 					<Routes>
 						<Route exact path="/" Component={Home} />
 						<Route exact path="/signup" Component={Signup} />
-						<Route exact path="/quiz" Component={Quiz} />
-						<Route exact path="/result" Component={Result} />
+						<PriveteRoute exact path="/quiz" Component={Quiz} />
+						<PriveteRoute exact path="/result" Component={Result} />
 						<Route exact path="/login" Component={Login} />
 					</Routes>
 				</Layout>
